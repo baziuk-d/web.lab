@@ -4,7 +4,9 @@
 
 ####                    1. Simple landing page
 
-Description: Create a landing page following the given design (Figma).
+Description: 
+Create a landing page following the given design (Figma).
+
 Requirements:
 Use of semantic tags (<header>, <nav>, <ul>, <footer>, etc.) wherever is necessary 
 All fonts, colour palette, elements sizes must strictly match the design.
