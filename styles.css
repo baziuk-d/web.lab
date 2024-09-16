@@ -100,7 +100,7 @@ nav {
     width: 220px;
     height: 52px;
     appearance: none;
-    background: url("../assets/Bird.svg") no-repeat right 26px center;
+    background: url("img/Arrow.svg") no-repeat right 26px center;
 }
 
 .first-section > img{
