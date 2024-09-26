@@ -1,0 +1,35 @@
+@import "styles/header.css";
+@import "styles/hero-area.css";
+@import "styles/learn-more-section.css";
+@import "styles/destination-section.css";
+@import "styles/footer-top.css";
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400&display=swap');
+@font-face {
+    font-family: 'Muli';
+    src: url('https://fonts.gstatic.com/s/mulish/v15/1Ptvg8LJRfWJmhDAuUs4TYF3eB7le2kqXg.ttf');
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
+@font-face {
+    font-family: "Inter";
+    src: url('https://fonts.gstatic.com/s/inter/v12/UcCO3FIc9pG9FF5XYu9p5f7K.ttf');
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&display=swap');
+@font-face {
+    font-family: "Playfair";
+    src: url('https://fonts.gstatic.com/s/playfairdisplay/v30/nuFiD-vYSZviVYUb_rj3ij__anPXDTzgoqP0.ttf');
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

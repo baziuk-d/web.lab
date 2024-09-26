@@ -1,0 +1,160 @@
+/* Стилізація елемента header */
+header {
+    justify-content: space-between; 
+    display: flex;
+    /* відступи зверху,знизу/з боків */
+    padding: 43px 190px;
+}
+
+
+/* стилізація чотирьох кнопок навігаційного блоку */
+nav ul {
+    list-style-type: none;
+    display: flex; 
+    /* проміжок між всіма елементами */
+    gap: 40px; 
+}
+
+
+/* cтилізація кнопок всередині header */
+header a {
+    color: #B8BECD;
+    text-decoration: none;
+    font-size: 16px; 
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+}
+
+/* стилізація посилань при наведенні */
+header a:hover {
+    color: black;
+}
+
+
+.login {
+    color: #FB8F1D; 
+    font-size: 15px;
+    font-family: "Inter", sans-serif;
+    border-radius: 8px;
+    border: 1px solid #FB8F1D;
+    background: inherit; 
+    cursor: pointer;
+    padding: 15px 46px;
+    font-weight: 500;
+    /* плавна анімація при наведенні */
+    transition: all 0.2s ease-in-out; 
+}
+
+
+.register {
+    color: #FFFFFF; 
+    font-size: 15px; 
+    font-family: "Inter", sans-serif; 
+    cursor: pointer; 
+    background: #FB8F1D; 
+    border: 1px solid #FB8F1D; 
+    border-radius: 8px; 
+    padding: 15px 36px; 
+    font-weight: 500;
+    /* плавна анімація при наведенні */
+    transition: all 0.2s ease-in-out; 
+}
+
+
+nav {
+    display: flex; 
+    align-items: center; 
+    column-gap: 34px;
+}
+
+
+.auth-buttons {
+    display: flex; 
+    column-gap: 18px; 
+}
+
+/* анімація при натисканні кнопки входу */
+.login:active {
+    transform: scale(0.8);
+}
+
+/* анімація при натисканні кнопки реєстрації */
+.register:active {
+    transform: scale(0.8);
+}
+
+/* cтилізація гамбургер меню */
+.hamburger {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    flex-direction: column;
+    justify-content: space-evenly; 
+    align-items: center;
+    display: none; 
+    cursor: pointer;
+}
+
+/* cтилізація самих ліній всередині гамбургера */
+.hamburger div {
+    width: 30px;
+    height: 2px;
+    background-color: black;
+    transition: 0.1s ease-in-out;
+}
+
+
+#container {
+    display: none; 
+    flex-direction: column; 
+    align-items: center;
+}
+
+
+@media screen and (max-width: 1100px) {
+    .hamburger {
+        display: flex;
+    }
+    #container ul {
+        flex-direction: column;
+        align-items: end;
+        /* відступ знизу */
+        margin-bottom: 25px; 
+    }
+
+    nav {
+        display: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: #B8BECD;
+    }
+
+    li a:hover {
+        color: black;
+    }
+
+    header {
+        /* зменшення відступів з боків для адаптації */
+        padding: 43px 15%;
+    }
+
+    .auth-buttons {
+        gap: 10px;
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width: 550px) {
+    li a {
+        font-size: 13px;
+    }
+    .login {
+        font-size: 13px;
+    }
+    .register {
+        font-size: 13px; 
+    }
+}

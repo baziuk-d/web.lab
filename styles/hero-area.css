@@ -1,0 +1,198 @@
+.hero-area {
+    padding: 0 189px 175px; 
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.hero-area h1 {
+    font-family: "Playfair", serif; 
+    font-size: 64px;
+    color: #202336; 
+    line-height: 80px;
+    padding: 114px 0;
+    max-width: 80%;
+}
+
+
+.hero-area h2 {
+    font-family: "Inter", sans-serif;
+    font-size: 22px; 
+    color: #202336;
+    padding: 0 0 21px; 
+}
+
+
+.hero-area hr {
+    border: none;
+    background-color: #202336;
+    width: 32px;
+    height: 2px;
+    margin-left: 0;
+}
+
+
+.hero-area label {
+    display: grid;
+    padding: 48px 0;
+    grid-template-columns: 1fr 1fr;
+    width: fit-content;
+    gap: 30px;
+}
+
+
+.hero-area select {
+    border: 1px solid #AFB0B9;
+    border-radius: 6px;
+    padding: 0 21px;
+    width: 220px;
+    height: 52px;
+    appearance: none;
+    background: url("../assets/Arrow.svg") no-repeat right 26px center;
+}
+
+
+hero-area :hover {
+    color: black;
+}
+
+/* cтилізація фото в heroSection */
+.hero-area > img {
+    padding: 0 0 0 105px; /* відступ зліва 105px */
+}
+
+/*  кнопкa explore */
+.explore-btn {
+    font-family: "Muli", sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    border: 1px solid #FB8F1D;
+    border-radius: 8px;
+    padding: 20px 60px;
+    background-color: #FB8F1D;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.explore-btn:active {
+    transform: scale(0.8);
+}
+
+
+@media screen and (max-width: 2560px) {
+    .hero-area {
+        justify-content: space-evenly !important;
+    }
+    .hero-area img {
+        /* зменшую ширину зображення на 45% */
+        width: 45%; 
+        height: auto;
+    }
+    .hero-area-btn h1 {
+        font-size: clamp(4rem, 0.803rem + 2.623vw, 5rem) !important; 
+    }
+    .hero-area h2 {
+        font-size: clamp(1.375rem, -0.223rem + 1.311vw, 1.875rem) !important; 
+    }
+    .hero-area select {
+        font-size: clamp(0.938rem, -1.06rem + 1.639vw, 1.563rem); 
+    }
+    .explore-btn {
+        font-size: clamp(1.063rem, 0.463rem + 0.492vw, 1.25rem);
+    }
+}
+
+
+@media screen and (max-width: 1450px) and (min-width: 1201px){
+    .hero-area > img {
+        /* змінюю ширину зображення на 45% */
+        width: 90%; 
+        height: auto;
+        padding: 0 90px 0 0;
+    }
+
+    .hero-area{
+        padding: 0 100px 150px !important;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .hero-area {
+        /* на 1200px ставлю елементи вертикально */
+        flex-direction: column; 
+        row-gap: 60px;
+    }
+
+    .hero-area > div {
+        display: flex; 
+        align-items: center; 
+        flex-direction: column; 
+    }
+
+    .hero-area h1 {
+        min-width: 120% !important;
+        text-align: center;
+        padding: 100px 0 50px !important;
+    }
+
+    .explore-btn {
+        display: flex;
+        align-items: center;
+        margin: 0 auto 0;
+    }
+
+    .hero-area > img {
+        padding: 0 !important;
+        width: 450px;
+        height: auto; 
+    }
+}
+
+
+@media screen and (max-width: 750px){
+    .hero-area h1 {
+        max-width: 100% !important;
+        font-size: 40px !important;
+        padding: 60px 0 !important;
+    }
+
+    .hero-area h2 {
+        font-size: 20px !important;
+    }
+
+    .hero-area > img {
+        width: 400px;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .hero-area {
+        padding: 0 10% !important;
+    }
+
+    .hero-area h1 {
+        max-width: 10%;
+        font-size: 30px !important; 
+        padding: 40px 0 !important; 
+    }
+
+    .hero-area h2 {
+        font-size: 15px !important; /* Зменшує розмір шрифту для підзаголовка до 15px */
+    }
+
+    .hero-area label {
+        /* тут ставлю одноколонкове розташування */
+        grid-template-columns: 1fr !important;
+    }
+
+
+    .hero-area img {
+        width: 300px; 
+        padding: 0 0 30px 0 !important; 
+    }
+}
