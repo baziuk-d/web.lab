@@ -1,2 +1,2 @@
-# First Web Lab
+# Web Lab
 ## Web technologies
